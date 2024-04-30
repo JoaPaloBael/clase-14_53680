@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-column, .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradiente-vertical, .main .caja-1 {
+  background-image: linear-gradient(to top, red, yellow, green, blue);
+}
+
+.gradiente-horizontal, .main .caja-2 {
+  background-image: linear-gradient(to left, rgb(0, 255, 153), green);
+}
+
+.gradiente-oblicua, .main .caja-3 {
+  background-image: linear-gradient(250deg, #bd82ee, #540b90);
+}
+
+.gradiente-circular, .main .caja-4 {
+  background-image: radial-gradient(circle, red, rgb(85, 14, 14));
+}
+
+.gradiente-elipse, .main .caja-5 {
+  background-image: radial-gradient(ellipse 250px 100px, lightgreen, #385d38);
+}
+
+.main .caja-1 {
+  background-color: rgba(33, 33, 33, 0.7411764706);
+  border: 2px black solid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateZ(15deg) translateX(150px);
+}
+.main .caja-2 {
+  background-color: rgba(255, 13, 0, 0.6588235294);
+  border: 2px black solid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: serif;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.85);
+}
+.main .caja-3 {
+  background-color: rgba(0, 68, 255, 0.7568627451);
+  border: 2px black solid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: monospace;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: skew(-20deg);
+}
+.main .caja-4 {
+  background-color: rgba(255, 170, 0, 0.7568627451);
+  border: 2px black solid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: fantasy;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .caja-5 {
+  background-color: rgba(195, 255, 0, 0.7568627451);
+  border: 2px black solid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  font-family: cursive;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */
