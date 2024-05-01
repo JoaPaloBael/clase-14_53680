@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Animate on scroll (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS propio -->
     <link rel="stylesheet" href="./css/main.css">
     <title>Clase 14</title>
 </head>
@@ -11,19 +16,31 @@
         <li>Link 1</li>
         <li>Link 2</li>
         <li>Link 3</li>
+        <form action="#" method="get">
+            <input type="search" name="search" id="search">
+            <input type="submit" name="submit" id="submit">
+        </form>
     </nav>
     <main class="main">
-        <h1>Clase 14 - Animaciones</h1>
-        <div class="caja-1">Caja 1</div>
+        <h1 class="animate__animated animate__hinge">Clase 14 - Animaciones</h1>
+        <div class="caja-1">Caja 1
+            <button>Ver más</button>
+        </div>
         <div class="caja-2">Caja 2</div>
-        <div class="caja-3">Caja 3</div>
-        <div class="caja-4">Caja 4</div>
-        <div class="caja-5">Caja 5</div>
+        <div class="caja-3 animate__animated animate__backInRight">Caja 3</div>
+        <div class="caja-4" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">Caja 4</div>
+        <div class="caja-5" data-aos="flip-right">Caja 5</div>
     </main>
     <footer>
         <div>Facebook</div>
         <div>Twitter</div>
         <div>Gmail</div>
     </footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

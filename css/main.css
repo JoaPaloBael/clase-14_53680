@@ -11,6 +11,20 @@
   align-items: center;
 }
 
+@keyframes giro {
+  0% {
+    transform: translate(150px);
+    font-size: 20px;
+  }
+  50% {
+    transform: rotate(180deg) translate(350px);
+    font-size: 35px;
+  }
+  100% {
+    transform: rotate(360deg) translate(50px);
+    font-size: 25px;
+  }
+}
 .gradiente-vertical, .main .caja-1 {
   background-image: linear-gradient(to top, red, yellow, green, blue);
 }
@@ -27,7 +41,7 @@
   background-image: radial-gradient(circle, red, rgb(85, 14, 14));
 }
 
-.gradiente-elipse, .main .caja-5 {
+.gradiente-elipse {
   background-image: radial-gradient(ellipse 250px 100px, lightgreen, #385d38);
 }
 
@@ -42,6 +56,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.4s ease-in-out;
+}
+.main .caja-1:hover {
   transform: rotateZ(15deg) translateX(150px);
 }
 .main .caja-2 {
@@ -55,7 +72,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0.85);
+  transition: 0.3s ease-in-out;
+}
+.main .caja-2:hover {
+  transform: scale(1.05);
 }
 .main .caja-3 {
   background-color: rgba(0, 68, 255, 0.7568627451);
@@ -81,6 +101,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: giro;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
 }
 .main .caja-5 {
   background-color: rgba(195, 255, 0, 0.7568627451);
@@ -93,4 +117,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: green;
+  transition: 0.3s;
+}
+.main .caja-5:hover {
+  background-color: blue;
 }/*# sourceMappingURL=main.css.map */

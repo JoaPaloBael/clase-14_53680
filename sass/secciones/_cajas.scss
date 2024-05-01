@@ -4,12 +4,18 @@
     .caja-1{
         @include cajas (#212121bd, sans-serif);
         @extend .gradiente-vertical;
-        transform: rotateZ(15deg) translateX(150px);
+        transition: 0.4s ease-in-out;
+        &:hover{
+            transform: rotateZ(15deg) translateX(150px);
+        }
     }
     .caja-2{
         @include cajas (#ff0d00a8, serif);
         @extend .gradiente-horizontal;
-        transform: scale(0.85)
+        transition: 0.3s ease-in-out;
+        &:hover{
+            transform: scale(1.05);
+        }
     }
     .caja-3{
         @include cajas (#0044ffc1, monospace);
@@ -19,9 +25,18 @@
     .caja-4{
         @include cajas (#ffaa00c1, fantasy);
         @extend .gradiente-circular;
-    }
+        animation-name: giro;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;}
+
     .caja-5{
         @include cajas (#c3ff00c1, cursive);
-        @extend .gradiente-elipse;
+        // @extend .gradiente-elipse;
+        background-color: green;
+        transition: 0.3s;
+        &:hover{
+            background-color: blue;
+        }
     }
 }
